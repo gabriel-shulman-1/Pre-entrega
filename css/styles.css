@@ -1,14 +1,25 @@
 /*texto*/
+/*index*/
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4e1e1;
+}
 h1{
     text-align: center;
     color: rgb(3, 3, 3);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 h2{
     text-align: center;
+    color: rgb(3, 3, 3);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
 }
 h3{
-    text-align: center;
+    text-align: left;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
 }
 legend{
     text-align: center;
@@ -27,10 +38,12 @@ legend{
 }
 .k{
     text-align: center;
-    line-height: 60px;
 }
-p{
-    margin: 15px;
+#s6{
+    font-weight: bold;
+}
+#opciones{
+    display: flex;
 }
 
 /*botones*/
@@ -138,6 +151,7 @@ p{
 header{
     background-color: lightgoldenrodyellow;
     border-radius: 10px;
+    margin-bottom: 1em;
 }
 main{
     background-color: cornflowerblue;
@@ -159,23 +173,33 @@ main{
     background-color: rgb(197, 47, 235);
     border-radius: 10px;
 }
+/*footer*/
 footer{
-    position: sticky;
-    bottom: 10px;
+    display: flex;
+    position: inherit;
+    margin-top: 1em;
     border-bottom: 10px;
-    background-color: rgb(207, 152, 235);
-    border-radius: 20px;
+    background-color: rgb(188 183 191);
+    border-radius: 0.2em;
+    text-align: center;
+}
+/*lista footer*/
+#contact1{
+    padding-left: 0.6em;
+    text-align: left;
+    margin-top: 1em;
+    list-style-type: disclosure-closed;
+    font-size: 0.8em;
+}
+#list{
+    margin: 0.1em;
+}
+#s4{
     font-weight: bold;
-    text-align: center;
 }
-body{
-    margin: 15px;
-    background-color: darkgrey;
-}
-/*listas*/
-ul{
-    text-align: center;
-    list-style:none;
+#dr{
+    font-size: 0.7em;
+    text-align: justify;
 }
 /*imagenes y videos*/
 img{
