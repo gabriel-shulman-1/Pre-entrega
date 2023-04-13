@@ -102,6 +102,16 @@ git clone (link "clone https")                          clona el repositorio a l
 pre entrega 2
 https://aguilar1998.github.io/segundaPre-entrega/index.html
 
+que falta del proyecto
+    wireframe
+
+agregar clases 5 a 11
+    flexbox
+    grids
+    pseudoclases
+    Bootstrap
+    git/github
+
 otros comandos git
 ●	git add <nombre_archivo>: comienza a trackear el archivo “nombre_archivo” (con “.” añades todos los archivos del directorio, y con “*” lo añades todo).
 ●	git add -i: permite agregar archivos de forma interactiva.
