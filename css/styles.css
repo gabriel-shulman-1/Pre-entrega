@@ -36,16 +36,41 @@ legend{
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.k{
+.parrafoEimagen{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 #s6{
     font-weight: bold;
 }
-#opciones{
+.seccion-uno, .seccion-tres{
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: flex;
 }
+.seccion-dos, .seccion-cuatro{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+}
+#DivBotonIndex{
+    width: 40%;
+}
 
+#opciones{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+#descripcion{
+    text-align: justify;
+    /* width: 50%; */
+    margin: 0.5em;
+    height: 60%;
+    font-size: 1.2em;
+}
 /*botones*/
 .volver{
     text-align: center;
@@ -71,26 +96,31 @@ legend{
     color: white;
 }
 #l1{
-    text-align: center;
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
     border-radius: 6px;
     border: none;
-      color: rgb(0, 0, 0);
-      padding: 16px 32px;
-      font-size: 16px;
-      -webkit-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
+    color: black;
+    padding: 16px 32px;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 #l1:hover{
-    background-color: #fd0000;
-    color: white;
+    background-color: #ff0000;
+    color: rgb(255, 251, 0);
 }
 #l2{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
@@ -107,9 +137,12 @@ legend{
 }
 #l2:hover{
     background-color: #fbff13;
-    color: white;
+    color: rgb(25, 0, 255);
 }
 #l3{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
@@ -126,9 +159,12 @@ legend{
 }
 #l3:hover{
     background-color: #16ff16;
-    color: white;
+    color: rgb(255, 0, 234);
 }
 #l4{
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
@@ -145,7 +181,7 @@ legend{
 }
 #l4:hover{
     background-color: #15dcff;
-    color: white;
+    color: rgb(255, 8, 0);
 }
 /*secciones*/
 header{
@@ -154,7 +190,7 @@ header{
     margin-bottom: 1em;
 }
 main{
-    background-color: cornflowerblue;
+    background-color: #c4dbbd;
     border-radius: 10px;
 }
 #m1{
@@ -176,7 +212,7 @@ main{
 /*footer*/
 footer{
     display: flex;
-    position: inherit;
+    flex-direction: row;
     margin-top: 1em;
     border-bottom: 10px;
     background-color: rgb(188 183 191);
@@ -185,17 +221,25 @@ footer{
 }
 /*lista footer*/
 #contact1{
-    padding-left: 0.6em;
+    padding-left: 1.6em;
     text-align: left;
     margin-top: 1em;
     list-style-type: disclosure-closed;
     font-size: 0.8em;
+    width: 30%;
+}
+#contact2{
+    width: 15%;
 }
 #list{
     margin: 0.1em;
 }
 #s4{
     font-weight: bold;
+}
+#derechosReservados{
+    width: 50%;
+    margin: 0.5em;
 }
 #dr{
     font-size: 0.7em;
