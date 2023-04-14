@@ -5,6 +5,9 @@ body{
     flex-direction: column;
     background-color: #e4e1e1;
 }
+
+
+
 h1{
     text-align: center;
     color: rgb(3, 3, 3);
@@ -74,12 +77,6 @@ legend{
 
 /*servicios(grid)*/
 
-#gridH-1{
-    display: grid;
-    grid-template-rows: 4rem 3rem;
-    justify-items: start;
-    padding-left: 1rem;
-}
 #m2{
     width: fit-content;
     background-color: rgb(239 236 192);
@@ -133,24 +130,28 @@ legend{
 }
 /*botones*/
 .volver{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
     color: #0099CC;
     background: transparent;
     border: 2px solid #0099CC;
     border-radius: 6px;
     border: none;
-      color: white;
-      padding: 16px 32px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      -webkit-transition-duration: 0.4s;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      text-decoration: none;
-      text-transform: uppercase;
-      grid-area: volver;
+    color: white;
+    padding: 1rem;
+    /* padding: 16px 32px; */
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-area: volver;
 }
 .volver:hover {
     background-color: #008CBA;
@@ -245,12 +246,40 @@ legend{
     color: rgb(255, 8, 0);
 }
 
+
+
 /*secciones*/
+
+/*Headers*/
 header{
-    background-color: lightgoldenrodyellow;
+    padding: 1rem;
+    background-color: rgb(40, 40, 40);
     border-radius: 10px;
     margin-bottom: 1em;
 }
+.Htrabajos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+}
+    /*texto header*/
+.txHeader{
+    color: whitesmoke;
+    text-align: justify;
+}
+.txHeader spam{
+    font-size: large;
+    font-weight: bold;
+}
+#divHeaderTrabajo1{
+    width: 60%;
+}
+#divHeaderTrabajo2{
+    width: 40%;
+}
+
+
 main{
     background-color: #c4dbbd;
     border-radius: 10px;
@@ -264,11 +293,45 @@ main{
     background-color: rgb(116, 228, 51);
     border-radius: 10px;
 }
-#m4{
-    background-color: rgb(197, 47, 235);
-    border-radius: 10px;
-}
 
+/*trabajos*/
+#m4{
+    background-color: rgb(233, 144, 255);
+    border-radius: 10px;
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto) 1.7fr;
+    grid-template-areas:
+    "m4a m4b"
+    "m4c m4d" 
+    "volver volver"
+    ;
+}
+.m4{
+    margin: 1rem;
+    text-align: justify;
+}
+.m4 a{
+    grid-area: m4a;
+    margin: 0.5rem;
+}
+.m4 b{
+    grid-area: m4b;
+}
+.m4 c{
+    grid-area: m4c;
+}
+.m4 d{
+    grid-area: m4d;
+    margin: 0.5rem;
+}
+#m4h2a{
+    text-align: right;
+}
+#m4h2b{
+    text-align: left;
+}
 /*footer*/
 footer{
     width: fit-content;
