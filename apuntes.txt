@@ -103,7 +103,7 @@ pre entrega 2
 https://aguilar1998.github.io/segundaPre-entrega/index.html
 
 que falta del proyecto
-    wireframe
+    wireframe: https://whimsical.com/proyecto-1-QtgmrDGErHP11zZQNowrEe
 
 agregar clases 5 a 11
     flexbox
