@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
     <header>
-        <h1 class="txHeader">Tu empresa puede subir al siguiente nivel</h1>
-        <h2 class="txHeader">En este cuestionario, podes dejar tus datos y el lugar donde necesitas nuestros servicios. Ni bien envies el formulario, nos estaremos comunicando con usted</h2>
+        
+            <h1 class="txHeader">Tu empresa puede subir al siguiente nivel</h1>
+            <h2 class="txHeader">En este cuestionario, podes dejar tus datos y el lugar donde necesitas nuestros servicios. Ni bien envies el formulario, nos estaremos comunicando con usted</h2>
+
     </header>
+
     <main id="m1">
         <fieldset>
             <legend>
@@ -44,40 +48,86 @@
                     <input type="email" name="email1" id="email">
                 </form>
             </div>
+
+            <div class="forma cuatro">
+                <form>
+                    <label for="adress">
+                        Direccion del solicitante:
+                    </label>
+                    <input type="adress" name="adress" id="adress">
+                </form>
+            </div>
         </fieldset>
         
         <div>
+
             <form>
-                <fieldset>
+                <fieldset id="serviciosCheck">
                     <legend>
                         <h3>Indique el tipo de servicio que precisa:</h3>
                     </legend>
-                    <h4>Sistema de acceso</h4>
-                    <input type="button" name="1" id="b1">
-                    <h4>Alarmas/video</h4>
-                    <input type="button" name="2" id="b2">
-                    <h4>Sistemas de gestion para trabajos</h4>
-                    <input type="button" name="3" id="b3">
-                    <h4>Analisis y estadisticas</h4>
-                    <input type="button" name="4" id="b4">
+
+                    <div class="checks">
+
+                        <h4>Sistema de acceso</h4>
+                        <input type="checkbox" name="1" id="b1">
+
+                    </div>
+                    <div class="checks">
+
+                        <h4>Alarmas/video</h4>
+                        <input type="checkbox" name="2" id="b2">
+
+                    </div>
+                    <div class="checks">
+
+                        <h4>Sistemas de gestion para trabajos</h4>
+                        <input type="checkbox" name="3" id="b3">
+
+                    </div>
+                    <div class="checks">
+
+                        <h4>Analisis y estadisticas</h4>
+                        <input type="checkbox" name="4" id="b4">
+
+                    </div>
+
                 </fieldset>    
             </form>
+
         </div>
 
-        <div>
-            <fieldset>
+        <div id="proyecto">
+
+            <fieldset id="sobreproyecto">
+
                 <legend>
                     <h3>Sobre el proyecto</h3>
                 </legend>
-                <label for="detalle">
+
+                <label for="detalle" id="labeldetalle">
                     hablenos del proyecto que tenga en mente:
                 </label>
+
                 <input type="text" name="det1" id="det">
+
             </fieldset>
+
         </div>
 
-        <div class="volver">
-            <a href="../index.html">volver</a>
+        <div id="botones">
+
+            <div class="botones back">
+                <a href="../index.html">volver</a>
+            </div>
+
+            <div class="botones done">
+                <a href="../index.html">Enviar</a>
+            </div>
+
+        </div>
+        
+            
         </div>
     </main>
     

@@ -76,6 +76,20 @@ legend{
 }
 
 /*nuevo-cliente*/
+#m1{
+    background-color: rgb(237, 155, 100);
+    border-radius: 10px;
+}
+
+#serviciosCheck{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.checks{
+    margin: 1rem;
+}
 .forma{
     display: flex;
     flex-direction: row;
@@ -86,6 +100,51 @@ form{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
+#botones{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    justify-content: center;
+}
+.back{
+    width: 20%;
+    margin-right: 2rem;
+    background: transparent;
+    border-radius: 6px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-area: volver;
+}
+.done{
+    width: 20%;
+    margin-left: 2rem;
+    background: transparent;
+    border-radius: 6px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-area: volver;
+}
+.back:hover {
+    background-color: #008CBA;
+    color: white;
+}
+.done:hover {
+    background-color: #1fba00;
+    color: white;
+}
+
 #nombre{
 
 }
@@ -95,6 +154,23 @@ form{
 #email{
 
 }
+#proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#labeldetalle{
+    margin-bottom: 0.5rem;
+}
+#sobreproyecto{
+    display: flex;
+    flex-direction: column;
+}
+#det{
+    height: 3rem;
+    
+}
+
 
 /*servicios(grid)*/
 #m2{
@@ -282,9 +358,11 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 0.5rem;
+    justify-content: space-around;
 }
     /*texto header*/
 .txHeader{
+    margin: 0.5rem;
     color: whitesmoke;
     text-align: justify;
 }
@@ -304,15 +382,9 @@ main{
     background-color: #c4dbbd;
     border-radius: 10px;
 }
-#m1{
-    background-color: rgb(237, 155, 100);
-    border-radius: 10px;
-}
 
-#m3{
-    background-color: rgb(116, 228, 51);
-    border-radius: 10px;
-}
+
+
 
 /*trabajos*/
 #m4{
@@ -352,6 +424,52 @@ main{
 #m4h2b{
     text-align: left;
 }
+
+/*sobre nosotros*/
+
+#m3{
+    background-color: rgb(116, 228, 51);
+    border-radius: 10px;
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3,30%) 10%;
+    grid-template-areas: 
+    "sn1 snimg1"
+    "snimg3 sn3"
+    "sn2 snimg2"
+    "volver volver";
+}
+.snimg{
+    padding: 3rem;
+}
+.sn{
+    padding: 0.5rem;
+}
+.sn .uno{
+    grid-area: sn1;
+    text-align: end;
+}
+.snimg .uno{
+    grid-area: snimg1;
+}
+.sn .dos{
+    grid-area: sn2;
+}
+.snimg .dos{
+    grid-area: snimg2;
+}
+.sn .tres{
+    grid-area: sn3;
+}
+.snimg .tres{
+    grid-area: snimg3;
+}
+.SN{
+    height: 1rem;
+}
+
+
 /*footer*/
 footer{
     width: fit-content;
@@ -392,6 +510,7 @@ footer{
 
 /*imagenes y videos*/
 img{
+    border-radius: 1rem;
     display:block;
     margin-left: auto;
     margin-right: auto;
