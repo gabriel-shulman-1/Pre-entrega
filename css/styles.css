@@ -5,9 +5,7 @@ body{
     flex-direction: column;
     background-color: #e4e1e1;
 }
-
-
-
+/*textos*/
 h1{
     text-align: center;
     color: rgb(3, 3, 3);
@@ -58,6 +56,7 @@ legend{
     padding-bottom: 1em;
     display: flex;
 }
+
 #DivBotonIndex{
     width: 40%;
 }
@@ -80,7 +79,18 @@ legend{
     background-color: rgb(237, 155, 100);
     border-radius: 10px;
 }
-
+#datoscliente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+/*.forma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}*/
 #serviciosCheck{
     display: flex;
     flex-direction: column;
@@ -90,12 +100,7 @@ legend{
 .checks{
     margin: 1rem;
 }
-.forma{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
+
 form{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -144,11 +149,11 @@ form{
     background-color: #1fba00;
     color: white;
 }
-
 #proyecto{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #labeldetalle{
     margin-bottom: 0.5rem;
@@ -347,6 +352,19 @@ header{
     justify-content: space-around;
 }
     /*texto header*/
+#headerIndex{
+    display: flex;
+    flex-direction: column;
+}
+#devices{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    color: white;
+}
+.device{
+    margin: 0.5rem;
+}
 .txHeader{
     margin: 0.5rem;
     color: whitesmoke;
@@ -432,23 +450,23 @@ main{
 .sn{
     padding: 0.5rem;
 }
-.sn .uno{
+.sn-uno{
     grid-area: sn1;
     text-align: end;
 }
-.snimg .uno{
+.snimg-uno{
     grid-area: snimg1;
 }
-.sn .dos{
+.sn-dos{
     grid-area: sn2;
 }
-.snimg .dos{
+.snimg-dos{
     grid-area: snimg2;
 }
-.sn .tres{
+.sn-tres{
     grid-area: sn3;
 }
-.snimg .tres{
+.snimg-tres{
     grid-area: snimg3;
 }
 .SN{
@@ -507,4 +525,256 @@ iframe{
     display:block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*adaptacion tablet y monitores pequeños*/
+@media screen and (max-width:600px){
+    /*ajuste index*/
+    #ind{
+        background-color: rgb(0, 0, 0);   
+    }
+    #m0{
+    background-color: #7be75b;
+    }
+    .dos,.tres,.cuatro,.cinco{
+        display: none;
+    }
+    .seccion-uno, .seccion-tres{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion-dos, .seccion-cuatro{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*footer*/
+    footer{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        border-bottom: 10px;
+        background-color: rgb(188 183 191);
+        border-radius: 0.2em;
+        text-align: center;
+        align-items: center;
+    }
+    /*nuestros trabajos*/
+    #m4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 144, 255);
+        border-radius: 10px;
+        }
+        .Htrabajos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem;
+            justify-content: center;
+            flex-wrap: nowrap;
+            align-content: center;
+        }
+    /*servicos*/
+    #m2{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        background-color: rgb(239 236 192);
+        border-radius: 10px;
+        gap: 0.5rem;
+        padding: 2rem;
+    }    
+}
+/*Ipads y tablets*/
+@media screen and (min-width:601px) and (max-width:800px){
+    /*index*/
+    #ind{
+        background-color: rgb(58, 58, 58);
+    }
+    #m0{
+        background-color: #5bc6e7;
+        }
+    .uno,.tres,.cuatro,.cinco{
+        display: none;
+    }
+    .seccion-uno, .seccion-tres{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion-dos, .seccion-cuatro{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /*footer*/
+    footer{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+        border-bottom: 10px;
+        background-color: rgb(188 183 191);
+        border-radius: 0.2em;
+        text-align: center;
+        align-items: center;
+    }
+    /*trabajos*/
+    #m4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 144, 255);
+        border-radius: 10px;
+        }
+    .Htrabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+        }
+    /*servicos*/
+    #m2{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        background-color: rgb(239 236 192);
+        border-radius: 10px;
+        gap: 0.5rem;
+        padding: 2rem;
+    }
+    #m3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        background-color: rgb(116, 228, 51);
+        border-radius: 10px;
+    }    
+}
+/*small screens y laptops*/
+@media screen and (min-width:801px) and (max-width:1024px){
+    /*index*/
+    #ind{
+        background-color: rgb(117, 117, 117);   
+    }
+    #m0{
+        display: flex;
+        flex-direction: column;
+        background-color: #e7d95b;
+    }
+    .seccion-uno, .seccion-tres{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion-dos, .seccion-cuatro{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .uno,.dos,.cuatro,.cinco{
+        display: none;
+    }
+    /*trabajos*/
+    #m4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 144, 255);
+        border-radius: 10px;
+        }
+    .Htrabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+    /*servicos*/
+    #m2{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        background-color: rgb(239 236 192);
+        border-radius: 10px;
+        gap: 0.5rem;
+        padding: 2rem;
+    }
+}
+/*desktops*/
+@media screen and (min-width:1025px) and (max-width:1200px){
+    /*index*/
+    #ind{
+        background-color: rgb(192, 192, 192);
+    }
+    .uno,.dos,.tres,.cinco{
+        display: none;
+    }
+    #m0{
+        background-color: #3f80d4;
+        }
+    /*trabajos*/
+    #m4{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 144, 255);
+        border-radius: 10px;
+        }
+    .Htrabajos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+}
+/*large displays y tv*/
+@media screen and (min-width:1201px){
+    /*index*/
+    #ind{
+        background-color: rgb(255, 255, 255);
+    }
+    #m0{
+        background-color: #e69999;
+        }
+    .uno,.dos,.tres,.cuatro{
+        display: none;
+    }
 }
