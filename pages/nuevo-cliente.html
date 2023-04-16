@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gs formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -19,12 +20,12 @@
     <main id="m1">
         <fieldset>
             <legend>
-                <h3>Datos del solicitante</h3>
+                <h3 class="fw-semibold text-center">Datos del solicitante</h3>
             </legend>
             
             <div class="forma uno">
                 <form>    
-                        <label for="nombre">
+                        <label for="nombre"  class="text-capitalize fw-semibold">
                             Nombre y apellido del solicitante:
                         </label>
                     <input type="text" name="nombres" id="nombre">
@@ -33,7 +34,7 @@
     
             <div class="forma dos">
                 <form>
-                    <label for="telefono">
+                    <label for="telefono" class="text-capitalize fw-semibold">
                         Ingrese un numero de telefono: 
                     </label>
                     <input type="tel" name="numero1" id="telefono">
@@ -42,7 +43,7 @@
     
             <div class="forma tres">
                 <form>
-                    <label for="email">
+                    <label for="email" class="text-capitalize fw-semibold">
                         Email del solicitante:
                     </label>
                     <input type="email" name="email1" id="email">
@@ -51,7 +52,7 @@
 
             <div class="forma cuatro">
                 <form>
-                    <label for="adress">
+                    <label for="adress" class="text-capitalize fw-semibold">
                         Direccion del solicitante:
                     </label>
                     <input type="adress" name="adress" id="adress">
@@ -64,31 +65,31 @@
             <form>
                 <fieldset id="serviciosCheck">
                     <legend>
-                        <h3>Indique el tipo de servicio que precisa:</h3>
+                        <h3 class="fw-semibold text-center">Indique el tipo de servicio que precisa:</h3>
                     </legend>
 
                     <div class="checks">
 
-                        <h4>Sistema de acceso</h4>
-                        <input type="checkbox" name="1" id="b1">
+                        <p class="text-capitalize fw-semibold">Sistema de acceso</p>
+                        <input class="form-check-input" type="checkbox" value="" id="b1">
 
                     </div>
                     <div class="checks">
 
-                        <h4>Alarmas/video</h4>
-                        <input type="checkbox" name="2" id="b2">
+                        <p class="text-capitalize fw-semibold">Alarmas/video</p>
+                        <input class="form-check-input" type="checkbox" value="" id="b2">
 
                     </div>
                     <div class="checks">
 
-                        <h4>Sistemas de gestion para trabajos</h4>
-                        <input type="checkbox" name="3" id="b3">
+                        <p class="text-capitalize fw-semibold">Sistemas de gestion para trabajos</p>
+                        <input class="form-check-input" type="checkbox" value="" id="b3">
 
                     </div>
                     <div class="checks">
 
-                        <h4>Analisis y estadisticas</h4>
-                        <input type="checkbox" name="4" id="b4">
+                        <p class="text-capitalize fw-semibold">Analisis y estadisticas</p>
+                        <input class="form-check-input" type="checkbox" value="" id="b4">
 
                     </div>
 
@@ -102,10 +103,10 @@
             <fieldset id="sobreproyecto">
 
                 <legend>
-                    <h3>Sobre el proyecto</h3>
+                    <h3 class="text-center">Sobre el proyecto</h3>
                 </legend>
 
-                <label for="detalle" id="labeldetalle">
+                <label for="detalle" id="labeldetalle" class="text-capitalize fw-semibold">
                     hablenos del proyecto que tenga en mente:
                 </label>
 
@@ -117,11 +118,11 @@
 
         <div id="botones">
 
-            <div class="botones back">
+            <div class="btn btn-outline-primary e 0">
                 <a href="../index.html">volver</a>
             </div>
 
-            <div class="botones done">
+            <div class="btn btn-outline-success">
                 <a href="../index.html">Enviar</a>
             </div>
 
