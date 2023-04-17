@@ -1,0 +1,45 @@
+/*linea de comentarios en sass y css*/
+//linea de comentarios en sass
+/*archivos secundarios*/
+@import "/componentes/_contacto";
+@import "/componentes/_vars";
+/*nesting*/
+/*estilos de header*/
+header{
+    background-color: $color-principal;
+    h1{
+        font-size: 2rem;
+        color: gray;
+    }
+    h2{
+        font-size: 1rem;
+        color: beige;
+    }
+    nav{
+        background-color: $color-secundario;
+        ul{
+            display: flex;
+            il{
+                font-weight: bold;
+            }
+        }
+    }    
+}
+/*main*/
+main{
+    background-color: deepskyblue;
+    div{
+        background-color: forestgreen;
+    }
+}
+/*section*/
+/*footer*/
+footer{
+    background-color: hotpink;
+    p{
+        font-size: 0.5rem;
+        spam{
+            font-weight: bold;
+        }
+    }
+}

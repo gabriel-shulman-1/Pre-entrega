@@ -1,0 +1,32 @@
+/*linea de comentarios en sass y css*/
+/*nesting*/
+/*estilos de header*/
+header {
+  background-color: red; }
+  header h1 {
+    font-size: 2rem;
+    color: gray; }
+  header h2 {
+    font-size: 1rem;
+    color: beige; }
+  header nav {
+    background-color: chartreuse; }
+    header nav ul {
+      display: flex; }
+      header nav ul il {
+        font-weight: bold; }
+
+/*main*/
+main {
+  background-color: deepskyblue; }
+  main div {
+    background-color: forestgreen; }
+
+/*section*/
+/*footer*/
+footer {
+  background-color: hotpink; }
+  footer p {
+    font-size: 0.5rem; }
+    footer p spam {
+      font-weight: bold; }
